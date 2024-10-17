@@ -7,7 +7,7 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenger program. I will be making a variety of functions for you to use. \n Please pick one");
 
-
+        hello
 
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers");
         var number1 = Console.ReadLine();
