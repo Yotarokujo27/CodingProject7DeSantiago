@@ -7,7 +7,7 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenger program. I will be making a variety of functions for you to use. \n Please pick one");
 
-        hello
+
 
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers");
         var number1 = Console.ReadLine();
@@ -58,16 +58,13 @@ class Challenges
        Sum(numberToUse8, numberToUse9/2);
 
         Console.WriteLine("Today you will give me a number and I will tell you if it is greater or equal to 0. \n Insert a number.");
-       
+
 
         
 
     }
 
-    public static int Sum(int number1, int number2)
-    {
-        return number1 + number2;   
-    }
+   
 
 
     // See https://aka.ms/new-console-template for more information
