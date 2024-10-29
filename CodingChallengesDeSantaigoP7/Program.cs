@@ -8,28 +8,7 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenger program. I will be making a variety of functions for you to use. \n Please pick one");
 
-        var Choice = Console.ReadLine()
-            bool work = true;
-        while (work)
-        {
-            if (ChoiceInt == 0)
-            {
-                work = false;
-            }
-            int ChoiceInt = Int.parse Choice;
-            if (ChoiceInt == 1)
-            {
-                //SumCode
-            }
-            else if (ChoiceInt == 2)
-            {
-                function 2 code
-            }
-            else
-            {
-            false 
-            }
-        }
+       
      
 
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers");
@@ -79,9 +58,6 @@ class Challenges
         int numberToUse9 = int.Parse(number9);
         Console.WriteLine(" The base of " + number8 + " multiplied by the height of " + number9 + " then divided by 2 is " + (numberToUse8 * numberToUse9/2));
        Sum(numberToUse8, numberToUse9/2);
-
-
-        Console.WriteLine("Today you will give me a number and I will tell you if it is greater or equal to 0. \n Insert a number.");
     }
 
    
