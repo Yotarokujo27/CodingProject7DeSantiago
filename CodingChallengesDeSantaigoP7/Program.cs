@@ -8,17 +8,28 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenger program. I will be making a variety of functions for you to use. \n Please pick one");
 
-       
-     
+        Console.WriteLine("\n Please pick one from the  list. \n0 Exit\n1: Sum\n2: Min to Sec\n3: Plus one\n4: Voltage times Current\n5: Age in days");
 
+        string Num = Console.ReadLine();
+        int parsed;
+        if(int.TryParse(Num, out parsed))
+        {
+            if (parsed <= 10 && parsed >= 0);
+        }
+        else
+        {
+            Console.WriteLine("Please give a valid function.");
+        }
+     
+        
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers");
         var number1 = Console.ReadLine();
         int numberToUse1 = int.Parse(number1);
         Console.WriteLine("Got it, give me your 2nd number. \n");
         var number2 = Console.ReadLine();
         int numberToUse2 = int.Parse(number2);
-        Console.WriteLine(" The sum of the number: " + number1 + " and the number: " + number2 +" is equal to: " + Sum(numberToUse1, numberToUse2));
-         Sum(numberToUse1, numberToUse2);
+        Console.WriteLine(" The sum of the number: " + number1 + " and the number: " + number2 +" is equal to: " +Sum(numberToUse1, numberToUse2));
+        Sum(numberToUse1, numberToUse2);
 
 
         Console.WriteLine("I am going to convert minutes to seconds.\nPlease input a number to convert.");
@@ -26,11 +37,11 @@ class Challenges
         int numberToUse3 = int.Parse(number3);
         Console.WriteLine("\n" + number3 + " minutes has " + int.Parse(number3) * 60 + " Seconds ");
 
-
+        
         Console.WriteLine("We are going to add +1 to a number. Please give me one number");
         var number4 = Console.ReadLine();
         int numberToUse4 = int.Parse(number4);
-        Console.WriteLine(" The number: " + number4 + " and " + 1 + " is equal to: " + Sum(numberToUse4, 1));
+        Console.WriteLine(" The number: " + number4 + " and " + 1 + " is equal to: " + (numberToUse4, 1));
         Sum(numberToUse4, 1);
 
 
@@ -57,8 +68,12 @@ class Challenges
         var number9 = Console.ReadLine();
         int numberToUse9 = int.Parse(number9);
         Console.WriteLine(" The base of " + number8 + " multiplied by the height of " + number9 + " then divided by 2 is " + (numberToUse8 * numberToUse9/2));
-       Sum(numberToUse8, numberToUse9/2);
+        Sum(numberToUse8, numberToUse9/2);
+
+        
+
     }
+
 
    
 
