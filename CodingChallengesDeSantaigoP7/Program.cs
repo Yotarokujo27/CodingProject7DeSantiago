@@ -10,13 +10,13 @@ class Challenges
             //Welcome the user to my program
             Console.WriteLine("Welcome to my coding challenger program. I will be making a variety of functions for you to use. \n Please pick one");
 
-            Console.WriteLine("\n Please pick one from the  list. \n0 Exit\n1: Sum\n2: Min to Sec\n3: Plus one\n4: Voltage times Current\n5: Age in days");
+            Console.WriteLine("\n Please pick one from the  list. \n0 Exit\n1: Sum\n2: Min to Sec\n3: Plus one\n4: Voltage times Current\n5: Age in days\n6: Area of Triangle\n7: Less Than Or Equal");
 
             string Num = Console.ReadLine();
             int parsed;
             if (int.TryParse(Num, out parsed))
             {
-                if (parsed <= 10 && parsed >= 0) ;
+                if (parsed <= 10 && parsed >= 0);
             }
             else
             {
@@ -49,7 +49,7 @@ class Challenges
             Console.WriteLine("\n" + number3 + " minutes has " + int.Parse(number3) * 60 + " Seconds ");
         }
 
-        static int Plus()
+        static void Plus()
         {
             Console.WriteLine("We are going to add +1 to a number. Please give me one number");
             var number4 = Console.ReadLine();
@@ -58,7 +58,7 @@ class Challenges
             Sum(numberToUse4, 1);
         }
 
-        static int Volt()
+        static void Volt()
         {
             Console.WriteLine("I will take a voltage and current to get the power \n give me a voltage. ");
             var number5 = Console.ReadLine();
@@ -70,26 +70,36 @@ class Challenges
             Sum(numberToUse5, numberToUse6);
         }
 
-        static int DaytoYears();
+        static void DaytoYears()
+        {
+            Console.WriteLine("\n I am going to convert years to days.\nPlease input a year to convert.");
+            var number7 = Console.ReadLine();
+            int numberToUse7 = int.Parse(number7);
+            Console.WriteLine("\n" + number7 + " years has " + int.Parse(number7) * 365 + " days ");
+        }
+
+
+        static void Triangle()
+        {
+            Console.WriteLine("\n I will take the base of triangle and the height of it and will return it's area. \n Please give the base.");
+            var number8 = Console.ReadLine();
+            int numberToUse8 = int.Parse(number8);
+            Console.WriteLine("\n Now give the height. \n");
+            var number9 = Console.ReadLine();
+            int numberToUse9 = int.Parse(number9);
+            Console.WriteLine(" The base of " + number8 + " multiplied by the height of " + number9 + " then divided by 2 is " + (numberToUse8 * numberToUse9 / 2));
+            Sum(numberToUse8, numberToUse9 / 2);
+
+        }
+
+        static void LessthanorEqual()
+        {
+
+        }
         
-        Console.WriteLine("\n I am going to convert years to days.\nPlease input a year to convert.");
-        var number7 = Console.ReadLine();
-        int numberToUse7 = int.Parse(number7);
-        Console.WriteLine("\n" + number7 + " years has " + int.Parse(number7) * 365 + " days ");
-        
 
 
         
-
-
-        Console.WriteLine("\n I will take the base of triangle and the height of it and will return it's area. \n Please give the base.");
-        var number8 = Console.ReadLine();
-        int numberToUse8 = int.Parse(number8);
-        Console.WriteLine("\n Now give the height. \n");
-        var number9 = Console.ReadLine();
-        int numberToUse9 = int.Parse(number9);
-        Console.WriteLine(" The base of " + number8 + " multiplied by the height of " + number9 + " then divided by 2 is " + (numberToUse8* numberToUse9/2));
-        Sum(numberToUse8, numberToUse9/2);
     }
     
     
