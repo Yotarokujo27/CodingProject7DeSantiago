@@ -17,18 +17,7 @@ class Challenges
         private static bool MainMenu()
         {
 
-            Console.WriteLine("\n Please pick one from the  list. \n0 Exit\n1: Sum\n2: Min to Sec\n3: Plus one\n4: Voltage times Current\n5: Age in days\n6: Area of Triangle\n7: Less Than Or Equal\n");
-
-            string Num = Console.ReadLine();
-            int parsed;
-            if (int.TryParse(Num, out parsed))
-            {
-                if (parsed <= 10 && parsed >= 0) ;
-            }
-            else
-            {
-                Console.WriteLine("Please give a valid function.");
-            }
+            Console.WriteLine("\n Please pick one from the  list. \n0 Exit\n1: Sum\n2: Min to Sec\n3: Plus one\n4: Voltage times Current\n5: Age in days\n6: Area of Triangle\n7: Less Than Or Equal\n8: Less than 100\n9: Equal to\n10: Something\n11: Reverse\n12: Hours to Seconds\n13: Polygon\n");
 
 
 
@@ -54,6 +43,24 @@ class Challenges
                     return true;
                 case "7":
                     LessThanOrEqual();
+                    return true;
+                case "8":
+                    LessThan100();
+                    return true;
+                case "9":
+                    EqualTo();
+                    return true;
+                case "10":
+                    Something();
+                    return true;
+                case "11":
+                    Reverse();
+                    return true;
+                case "12":
+                    HoursToSeconds();
+                    return true;
+                case "13":
+                    Polygon();
                     return true;
                 case "0":
                     return false;
@@ -92,8 +99,8 @@ class Challenges
             Console.WriteLine("We are going to add +1 to a number. \n Please give a number");
             var number4 = Console.ReadLine();
             int numberToUse4 = int.Parse(number4);
-            Console.WriteLine(" The number: " + number4 + " and " + 1 + " is equal to: " + (numberToUse4, 1));
-            Sum(numberToUse4, 1);
+            Console.WriteLine(" The number: " + number4 + " and " + 1 + " is equal to: " + (numberToUse4  + 1));
+            Sum(numberToUse4 , 1);
         }
 
         private static void VoltagetimesCurrent()
@@ -131,6 +138,35 @@ class Challenges
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
         }
 
+        private static void LessThan100()
+        {
+
+        }
+
+        private static void EqualTo()
+        {
+
+        }
+
+        private static void Something()
+        {
+
+        }
+
+        private static void Reverse()
+        {
+
+        }
+
+        private static void HoursToSeconds()
+        {
+
+        }
+
+        private static void Polygon()
+        {
+
+        }
 
     }
     public static int Sum(int number1, int number2)
