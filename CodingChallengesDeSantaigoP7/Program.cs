@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design;
+using System.Reflection.Metadata.Ecma335;
 
 class Challenges
 {
@@ -140,32 +141,35 @@ class Challenges
 
         private static void LessThan100()
         {
-
+            Console.WriteLine("I will take two numbers and return if the sum is less or above 100. \n Input a number");
         }
 
         private static void EqualTo()
         {
-
+            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
         }
 
         private static void Something()
         {
-
+            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
         }
 
         private static void Reverse()
         {
-
+            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
         }
 
         private static void HoursToSeconds()
         {
-
+            Console.WriteLine("\n I am going to convert hours to seconds.\n Please give an hour or hours.");
+            var number20 = Console.ReadLine();
+            int numberToUse20 = int.Parse(number20);
+            Console.WriteLine("\n" + number20 + " hour(s) has " + int.Parse(number20) * 3600 + " seconds ");
         }
 
         private static void Polygon()
         {
-
+            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
         }
 
     }
