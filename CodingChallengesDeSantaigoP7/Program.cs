@@ -136,27 +136,59 @@ class Challenges
 
         private static void LessThanOrEqual()
         {
-            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
+            Console.WriteLine("I will take a number and return if it's less than or equal to zero. \n Input a number");
+            public static bool LessThanOrEqualToZero(double a)
+            {
+                if(a <= 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+
         }
 
         private static void LessThan100()
         {
             Console.WriteLine("I will take two numbers and return if the sum is less or above 100. \n Input a number");
+            public static bool lessThan100(int a, int b)
+            {
+                return a + b < 100;
+            }
         }
 
         private static void EqualTo()
         {
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
+            {
+                {
+                    public static bool IsEqual(int num1, int num2) => num1 == num2;
+                }
+            }
+
         }
 
         private static void Something()
         {
-            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
+            Console.WriteLine("I will something and add something to it. \n Input something");
+            {
+                public static string GiveMeSomething(string a)
+                {
+                    return $"something {a}";
+                }
+            }
+
         }
 
         private static void Reverse()
         {
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
+            {
+                public static bool Reverse(bool boolean)
+                {
+                    return !boolean;
+                }
+            }
         }
 
         private static void HoursToSeconds()
@@ -169,7 +201,11 @@ class Challenges
 
         private static void Polygon()
         {
-            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
+            Console.WriteLine("I will return the sum of internal angles(in degrees) of a polygon \n Input a number");
+            {
+                public static int SumPolygon(int num) => (num - 2) * 180;
+            }
+           
         }
 
     }
