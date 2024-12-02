@@ -55,7 +55,7 @@ class Challenges
                     Something();
                     return true;
                 case "11":
-                    Reverse();
+                    Reverse ();
                     return true;
                 case "12":
                     HoursToSeconds();
@@ -135,28 +135,27 @@ class Challenges
             Sum(numberToUse8, numberToUse9 / 2);
         }
 
-        private static void LessThanOrEqual()
+        static bool LessThanOrEqual(bool value)
         {
+            
             Console.WriteLine("I will take a number and return if it's less than or equal to zero. \nInput a number");
             int main()
             {
                 
                 var number10 = Console.ReadLine();
                 int numberToUse10 = int.Parse(number10);
-                int a = 3;
-                int b = 4;
+                int a = int.Parse(number10);
+                int b = 0;
 
                 // Conditional Statements
                 if (a > b)
                 {
-                    printf("a is equal\n");
+                    ("a is equal\n");
                 }
-                else
+                else (a > b)
                 {
-                    printf("a is smaller\n");
+                    ("a is smaller\n");
                 }
-
-                printf("%d is the result of a>b", a > b);
 
                 return 0;
 
@@ -192,7 +191,7 @@ class Challenges
 
         }
 
-        private static void Reverse()
+        private bool Reverse(bool value)
         {
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
             {
