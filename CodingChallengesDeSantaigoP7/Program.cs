@@ -55,7 +55,7 @@ class Challenges
                     Something();
                     return true;
                 case "11":
-                    Reverse ();
+                    Reverse();
                     return true;
                 case "12":
                     HoursToSeconds();
@@ -135,11 +135,10 @@ class Challenges
             Sum(numberToUse8, numberToUse9 / 2);
         }
 
-        static bool LessThanOrEqual(bool value)
+        private static void LessThanOrEqual()
         {
             
             Console.WriteLine("I will take a number and return if it's less than or equal to zero. \nInput a number");
-            int main()
             {
                 
                 var number10 = Console.ReadLine();
@@ -148,16 +147,7 @@ class Challenges
                 int b = 0;
 
                 // Conditional Statements
-                if (a > b)
-                {
-                    ("a is equal\n");
-                }
-                else (a > b)
-                {
-                    ("a is smaller\n");
-                }
-
-                return 0;
+                bool result = false;
 
             }
 
@@ -165,20 +155,14 @@ class Challenges
 
         private static void LessThan100()
         {
-
+            Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
         }
         
      
 
-            private static void EqualTo()
+        private static void EqualTo()
         {
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
-            {
-                {
-                   
-                }
-            }
-
         }
 
         private static void Something()
@@ -191,7 +175,7 @@ class Challenges
 
         }
 
-        private bool Reverse(bool value)
+        private static void Reverse()
         {
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
             {
@@ -216,7 +200,6 @@ class Challenges
             {
                  
             }
-           
         }
 
     }
