@@ -175,15 +175,15 @@ class Challenges
 
         }
 
-        private static void Reverse()
+        static void ReverseBoolean()
         {
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
+            bool theBool;
+            while(!Boolean.TryParse(Console.ReadLine(), out theBool))
             {
-                
-                {
-                   
-                }
+                Console.WriteLine("Please ");
             }
+            Console.WriteLine("you" + theBool + "hh" + ReverseBooValue(theBool));
         }
 
         private static void HoursToSeconds()
