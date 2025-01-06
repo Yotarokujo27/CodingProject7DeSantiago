@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design;
+using System.Net.Security;
 using System.Reflection.Metadata.Ecma335;
 
 class Challenges
@@ -43,7 +44,7 @@ class Challenges
                     AreaofTriangle();
                     return true;
                 case "7":
-                    LessThanOrEqual();
+                    LessThanOrEqualBoolean();
                     return true;
                 case "8":
                     LessThan100();
@@ -52,10 +53,10 @@ class Challenges
                     EqualTo();
                     return true;
                 case "10":
-                    Something();
+                    SomethingBoolean();
                     return true;
                 case "11":
-                    Reverse();
+                    ReverseBoolean();
                     return true;
                 case "12":
                     HoursToSeconds();
@@ -135,7 +136,7 @@ class Challenges
             Sum(numberToUse8, numberToUse9 / 2);
         }
 
-        private static void LessThanOrEqual()
+        private static void LessThanOrEqualBoolean()
         {
             
             Console.WriteLine("I will take a number and return if it's less than or equal to zero. \nInput a number");
@@ -165,7 +166,7 @@ class Challenges
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
         }
 
-        private static void Something()
+        private static void SomethingBoolean()
         {
             Console.WriteLine("I will something and add something to it. \n Input something");
             {
@@ -175,7 +176,7 @@ class Challenges
 
         }
 
-        static void ReverseBoolean()
+        static void ReverseBoolean(bool boolean)
         {
             Console.WriteLine("I will take a number and return if it's less than, above, or equal to zero. \n Input a number");
             bool theBool;
@@ -183,7 +184,7 @@ class Challenges
             {
                 Console.WriteLine("Please ");
             }
-            Console.WriteLine("you" + theBool + "hh" + ReverseBooValue(theBool));
+            Console.WriteLine("you" + theBool + "hh" +(theBool));
         }
 
         private static void HoursToSeconds()
@@ -202,7 +203,25 @@ class Challenges
             }
         }
 
+        static void month()
+        {
+            int input;
+            Console.WriteLine("Helo, pick a number and see what month corresponds with it. ");
+            while (int .TryParse(Console.ReadLine(), out input) || input < 0 || input > 12)
+            {
+                Console.WriteLine("The number you picked is-");
+            }
+            Console.WriteLine(monthName(input)); 
+             
+            
+        }
+
+        
+
     }
+
+   
+
     public static int Sum(int number1, int number2)
     {
         return number1 + number2;
