@@ -73,7 +73,10 @@ class Challenges
 
         }
 
-       
+        private static void ReverseBoolean()
+        {
+            throw new NotImplementedException();
+        }
 
         private static void Adder()
         {
@@ -203,7 +206,7 @@ class Challenges
             }
         }
 
-        static void month()
+        static void months()
         {
             int input;
             Console.WriteLine("Helo, pick a number and see what month corresponds with it. ");
@@ -211,9 +214,20 @@ class Challenges
             {
                 Console.WriteLine("The number you picked is-");
             }
-            Console.WriteLine(monthName(input)); 
-             
-            
+            Console.WriteLine(monthName(input));
+
+
+            static string monthName(int m);
+            {
+                string[] months = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+                return months[m];
+            }
+           
+
+
+
+
+
         }
 
         
