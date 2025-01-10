@@ -64,6 +64,9 @@ class Challenges
                 case "13":
                     Polygon();
                     return true;
+                case "21":
+                    months();
+                    return true;
                 case "0":
                     return false;
                 default:
@@ -206,11 +209,11 @@ class Challenges
             }
         }
 
-        static void months()
+        static string months()
         {
             int input;
             Console.WriteLine("Helo, pick a number and see what month corresponds with it. ");
-            while (int .TryParse(Console.ReadLine(), out input) || input < 0 || input > 12)
+            while (int .TryParse(Console.ReadLine(), out input) || input <= 0 || input > 12)
             {
                 Console.WriteLine("The number you picked is-");
             }
@@ -220,10 +223,12 @@ class Challenges
             static string monthName(int m);
             {
                 string[] months = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+                int m = 0;
                 return months[m];
             }
-           
 
+            
+            
 
 
 
