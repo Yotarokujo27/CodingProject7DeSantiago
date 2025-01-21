@@ -62,10 +62,10 @@ class Challenges
                     HoursToSeconds();
                     return true;
                 case "13":
-                    Polygon();
+                    GetPow();
                     return true;
-                case "21":
-                    months();
+                case "24":
+                    ham();
                     return true;
                 case "0":
                     return false;
@@ -200,39 +200,57 @@ class Challenges
             int numberToUse20 = int.Parse(number20);
             Console.WriteLine("\n" + number20 + " hour(s) has " + int.Parse(number20) * 3600 + " seconds ");
         }
-
-        private static void Polygon()
+        private static void Exponent()
         {
-            Console.WriteLine("I will return the sum of internal angles(in degrees) of a polygon \n Input a number");
-            {
-                 
-            }
+            
         }
 
-        static string months()
+        private static void GetPow()
         {
-            int input;
-            Console.WriteLine("Helo, pick a number and see what month corresponds with it. ");
-            while (int .TryParse(Console.ReadLine(), out input) || input <= 0 || input > 12)
-            {
-                Console.WriteLine("The number you picked is-");
-            }
-            Console.WriteLine(monthName(input));
+            Console.WriteLine("Give me a base and an exponent");
 
+            var number21 = Console.ReadLine();
+            int numberToUse21 = int.Parse(number21);
 
-            static string monthName(int m);
+            var number22 = Console.ReadLine();
+            int numberToUse22 = int.Parse(number22);
+
+            int GetPow(int baseNum, int powNum)
             {
-                string[] months = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-                int m = 0;
-                return months[m];
+                int result = 1;
+
+                for (int i = 0; i < powNum; i++)
+                {
+                    result = result * powNum;
+                }
+                return result;
+
             }
         }
-
-        private static void Base()
+        private static void ham()
+        {
+            Console.WriteLine("Hello");
+        }
+        static int hammingDist(String str1, String str2)
         {
 
+            int i = 0, count = 0;
+            while (i < str1.Length)
+            {
+                if (str1[i] != str2[i])
+                    count++;
+                i++;
+            }
+            return count;
         }
-        
+
+
+
+
+
+
+
+
 
     }
 
